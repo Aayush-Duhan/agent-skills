@@ -9,7 +9,7 @@ Guidelines and rules to follow when scaffolding a Node.js project or adding auth
 ## Scaffolding Process
 
 When scaffolding a Node.js project, follow this order:
-1. **Directory Structure**: Create all directory structures inside a `src/` directory, even if they are initially empty:
+1. **Directory Structure**: Create all directory structures inside a `src/` directory, even if they are initially empty. Ensure to create a `.gitkeep` file in each of these directories to guarantee they are tracked in version control and always created on disk:
    - `src/controllers`
    - `src/services`
    - `src/models`
