@@ -53,7 +53,9 @@ Walk through EVERY file in the project, in the order a developer would build the
 
 ### 4. Flow Diagram
 Include a Mermaid sequence or flow diagram showing the runtime behavior. Rules:
+- **NEVER use Mermaid reserved keywords as participant IDs.** Reserved keywords include: `loop`, `alt`, `opt`, `par`, `end`, `rect`, `critical`, `break`, `else`. If a function or concept matches a reserved word (e.g., a function called `loop`), use a different internal ID with a display alias. Example: `participant RenderLoop as loop` instead of `participant Loop as loop`.
 - Quote participant names that contain special characters like parentheses
+- Avoid parentheses, equals signs, and HTML tags (like `<br/>`) in arrow labels and notes
 - Use descriptive labels on arrows
 - Add notes for important state changes
 
